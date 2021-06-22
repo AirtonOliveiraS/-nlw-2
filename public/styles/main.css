@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html, html.dark {
+    height: 100vh;
+
+}
+
+body {
+    display: flex;
+    background-color: var(--color-background);
+    align-items: center;
+    justify-content: center;
+
+}
+
+body, input, button, textarea {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+}
+@media (min-width: 700px) {
+    html, html.dark {
+        font-size: 62.5%
+    }
+}
+
+.button-darkness {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 60px;
+	height: 60px;
+	bottom: 20px;
+	right: 20px;
+    background:#0C9;
+    border-radius:50px;
+}
+
+.button-darkness input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/brightness/dark-lamp-1.svg');
+    background-color: transparent;
+    border: 0 transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-darkness img {
+    width: 3.6rem;
+    height: 3.6rem;
+}
